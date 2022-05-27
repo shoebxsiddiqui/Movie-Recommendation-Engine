@@ -245,6 +245,11 @@ function show_details(movie_details,movie_title,my_api_key,movie_id,movie_title_
   });
 }
 
+
+function togglePopup() {
+  document.getElementById("popup-1").classList.toggle("active");
+}
+
 // getting the details of individual cast
 function get_individual_cast(movie_cast,my_api_key) {
     cast_bdays = [];
@@ -349,3 +354,5 @@ function get_movie_cast(movie_id,my_api_key){
     });
     return {rec_movies:rec_movies,rec_movies_org:rec_movies_org,rec_posters:rec_posters,rec_year:rec_year,rec_vote:rec_vote};
   }
+
+

@@ -22,14 +22,15 @@
 </head>
 
 <body id="content">
-
+<br><br>
 	<div class="results">
 	    <center>
-	      <h2 id="name" class="text-uppercase" style="font-family: 'Rowdies', cursive;">{{title}}</h2>
+	      <h2 id="name" class="text-uppercase" style="font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #e50914; font-weight: 900; text-shadow: #000000 0px 0px 13px;">{{title}}</h2>
 	    </center>
 	</div>
 	<br/>
-
+<br>
+  <!-- Movie description  -->
   <div id="mycontent">
     <div id="mcontent">
       <div class="poster-lg">
@@ -52,6 +53,7 @@
   </div>  
   <br/>
 	
+<!-- Cast information  -->
 {% for name, details in cast_details.items() if not cast_details.hidden %}
   <div class="modal fade" id="{{details[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -69,7 +71,7 @@
             <p><strong>Birthday:</strong> {{details[2]}} </p>
             <p><strong>Place of Birth:</strong> {{details[3]}} </p>
             <p> 
-              <p><strong>Biography:</strong><p>
+              <p><strong>BIOGRAPHY:</strong><p>
               {{details[4]}}
             </p>
           </div>
@@ -82,17 +84,18 @@
   </div>
   {% endfor %}
 
+<br><br><br><br><br><br><br><br>
   <div class="container"> 
 
     {% if casts|length > 1 %}
       <div class="movie" style="color: #E8E8E8;">
         <center>
-          <h2 style="font-family: 'Rowdies', cursive;">TOP CAST</h2>
+          <h2 style="font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #e50914; font-weight: 900; text-shadow: #000000 0px 0px 13px;"><b>TOP CAST</b></h2>
           <h5>(Click on the cast to know more)</h5>
         </center>
       </div>
 
-    
+    <br><br><br>
       <div class="movie-content">
         {% for name, details in casts.items() if not casts.hidden %}
           <div class="castcard card" style="width: 14rem;" title="Click to know more about {{name}}" data-toggle="modal" data-target="#{{details[0]}}">
@@ -111,16 +114,18 @@
       </div>
     {% endif %}
     <br/>
-
+<br><br><br><br><br><br><br><br>
+  <!-- Comments and sentiments of the movie  -->
   <center>
     {% if reviews %}
-    <h2 style="font-family: 'Rowdies', cursive;color:white">USER REVIEWS---</h2>
+    <h2 style="font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #e50914; font-weight: 900; text-shadow: #000000 0px 0px 13px;">USER REVIEWS</h2>
+    <br><br><br>
      <div class="col-md-12" style="margin: 0 auto; margin-top:25px;">
         <table class="table table-bordered" bordercolor="white" style="color:white">
             <thead>
                 <tr>
-                  <th class="text-center" scope="col" style="width: 50%">Comments</th>
-                  <th class="text-center" scope="col">Sentiments</th>
+                  <th class="text-center" scope="col" style="font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; width: 900%; color: #e50914; font-weight: 900; text-shadow: #000000 0px 0px 13px;"><h3><b>COMMENTS</b></h3></th>
+                  <th class="text-center" scope="col" style="font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; width: 900%; color: #e50914; font-weight: 900; text-shadow: #000000 0px 0px 13px;"><h3><b>SENTIMENTS</b></h3></th>
                 </tr>
             </thead>
     
@@ -161,13 +166,14 @@
     {% endif %}
   </center>
   <br/>
-   
- 
+   <br><br><br><br><br><br><br><br>
+ <!-- Recommend Movies  -->
     {% if movie_cards|length > 1 %}
 
       <div class="movie" style="color: #E8E8E8;">
-        <center><h2 style="font-family: 'Rowdies', cursive;">RECOMMENDED MOVIES FOR YOU</h2><h5>(Click any of the movies to get recommendation)</h5></center>
+        <center><h2 style="font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #e50914; font-weight: 900; text-shadow: #000000 0px 0px 13px;">RECOMMENDED MOVIES FOR YOU</h2><h5>(Click any of the movies to get recommendation)</h5></center>
       </div>
+      <br><br><br>
 
       <div class="movie-content">
         {% for poster, details in movie_cards.items() if not movie_cards.hidden %}
@@ -191,8 +197,8 @@
         {% endfor %}
       </div>
     {% endif %}
-<br/><br/><br/><br/>
   </div>
+  <br/><br/><br/><br/><br><br>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{url_for('static', filename='recommend.js')}}"></script>
