@@ -5,15 +5,20 @@
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
 
-This application provides the recommendations of the requested movie along with the details of the requested movie such as overview, genre, release date, rating, runtime, top cast, and reviews, etc.
+I've made a web application called “Movie-py” that demonstrate the working of a Movie Recommendation engine which supports all languages movies and have some extra features !!!
+
+Movies have always been a substantial part of entertainment in our history and specially in this current world which is amidst a pandemic, movies have played a large role by helping people to relax their mind. But when you watch a movie the next big question is “WHAT NEXT?” it is the most confusing question that almost everyone has and to solve this problem I have created this project. It is a Content Based Recommendation System that recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie.
 
 ## Link to the application
 
 Check out the live demo: https://movie-recommendation-engine1.herokuapp.com/
 
+Check out the ppt:https://docs.google.com/presentation/d/1GxdCzoW5LBRJvjp8lu9AvCMbyymUwF8d/edit?usp=sharing&ouid=104805178903118814803&rtpof=true&sd=true
+
 ## Note
 
 Don't worry if the movie that you are looking for is not auto-suggested. Just type the movie name and click on "enter". You will be good to go even though if you made some typo errors.
+
 
 # How I got the details of the movie ?
 
