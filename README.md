@@ -5,7 +5,7 @@
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
 
-I've made a web application called “Movie-py” that demonstrate the working of a Movie Recommendation engine which supports all languages movies and have some extra features !!!
+I've made a web application called “Cinemate” that demonstrate the working of a Movie Recommendation engine which supports all languages movies and have some extra features !!!
 
 Movies have always been a substantial part of entertainment in our history and specially in this current world which is amidst a pandemic, movies have played a large role by helping people to relax their mind. But when you watch a movie the next big question is “WHAT NEXT?” it is the most confusing question that almost everyone has and to solve this problem I have created this project. It is a Content Based Recommendation System that recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie.
 
